@@ -1,7 +1,7 @@
 // Instance Method
 public class MethodType {
     // Instance method
-    static void displayStudent() {
+    void displayStudent() {
         System.out.println("Student name: Akash");
         System.out.println("Course: B.Tech CSE");
     }
@@ -9,10 +9,10 @@ public class MethodType {
     public static void main(String[] args) {
 
         // Creating an object
-//        MethodType s1 = new MethodType();
+        MethodType s1 = new MethodType();
 
         // Calling instance method using object
-        displayStudent();
+        s1.displayStudent();
 
         // Calling static method using class name
         MethodType md = new MethodType();

@@ -32,7 +32,7 @@ public class ConstructorChaining2 {
 
     public static void main(String[] args) {
 
-        Student s = new Student();
+        StudentNew s = new StudentNew();
 
         s.display();
     }

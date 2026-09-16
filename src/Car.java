@@ -1,33 +1,32 @@
 public class Car {
     String model;
     int rc;
-    Car(String m, int r)
+    Car(String s, int r)
     {
-        model = m;
-        rc= r;
-    }
-    Car(String s)
-    {
-        this("kavbeve", 876161);
-        //model = s;
-        //
+        model = s;
+        rc = r;
     }
     Car()
     {
-        this("jhas", 8769525);
+        this("jhbsac", 78474);
+//        model = "jhbsac";
+//        rc = 78474;
     }
-
+    Car(String s)
+    {
+//        model = s;
+//        rc = 986539;
+        this("jacbejve", 874745);
+    }
     public static void main(String[] args)
     {
-        Car c1 = new Car("honda", 875244);
-        Car c2 = new Car("hyundia");
-        Car c3 = new Car();
+        Car c1 = new Car("Honda", 48677);
 //        c1.model = "Honda";
-//        c1.rc = 7683915;
-
-   //     Car c2 = new Car();
+//        c1.rc = 87152461;
+        Car c2 = new Car();
+        Car c3 = new Car("jVJBSC");
 //        c2.model = "Hyundai";
-//        c2.rc = 876951;
+//        c2.rc = 8926159;
 
         System.out.println(c1.model + c1.rc);
         System.out.println(c2.model + c2.rc);

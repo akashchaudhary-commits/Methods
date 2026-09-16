@@ -58,7 +58,7 @@ public class Question2 {
 
         System.out.println("Creating Student 1");
 
-        Student s1 = new Student();
+        StudentNew s1 = new StudentNew();
 
         s1.display();
 
