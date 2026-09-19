@@ -19,18 +19,18 @@ class Personn {
 }
 
 
-class Student2 extends Personn {
+class Student3 extends Personn {
 
     int rollNo;
     String course;
 
     // No-argument Student constructor
-    Student2() {
+    Student3() {
         this(101, "Akash", 20, "B.Tech");
     }
 
     // Parameterized Student constructor
-    Student2(int rollNo, String name, int age, String course) {
+    Student3(int rollNo, String name, int age, String course) {
 
         super(name, age);
 
@@ -40,14 +40,12 @@ class Student2 extends Personn {
         System.out.println("Student parameterized constructor");
     }
 
-    void display() {
+    void displayd() {
 
-        System.out.println("-------------------");
-        System.out.println("Roll No : " + rollNo);
-        System.out.println("Name    : " + name);
-        System.out.println("Age     : " + age);
-        System.out.println("Course  : " + course);
-        System.out.println("-------------------");
+        System.out.println("Roll No:" + rollNo);
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Course: " + course);
     }
 }
 
@@ -56,17 +54,12 @@ public class Question2 {
 
     public static void main(String[] args) {
 
-        System.out.println("Creating Student 1");
+        Student3 s1 = new Student3();
 
-        StudentNew s1 = new StudentNew();
+        s1.displayd();
 
-        s1.display();
+        Student3 s2 = new Student3(102, "Rahul", 21, "BCA");
 
-
-        System.out.println("\nCreating Student 2");
-
-        Student2 s2 = new Student2(102, "Rahul", 21, "BCA");
-
-        s2.display();
+        s2.displayd();
     }
 }
