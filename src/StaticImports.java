@@ -4,7 +4,6 @@
 
 import static java.lang.Math.*;
 
-
 class StaticImports {
 
     public static void main(String[] args) {
