@@ -1,7 +1,7 @@
 package CollegeCL;
 
 public class StudentST {
-    protected String name;
+    public String name;
     public int rollno;
 }
 
