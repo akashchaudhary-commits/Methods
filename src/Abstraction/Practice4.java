@@ -1,9 +1,9 @@
 package Abstraction;
 // Functional Interfaces
 // lambda with two parameters
-@FunctionalInterface
+//@FunctionalInterface
 interface Calculator {
-    int add(int a, int b);
+    void add(int a, int b);
 }
 
 // lamda with no parameters
@@ -27,9 +27,9 @@ public class Practice4 {
 
     public static void main(String[] args) {
 
-        Calculator c = (a, b) -> a + b;
+        Calculator c = (a, b) -> System.out.println(a + b);
 
-        System.out.println(c.add(10, 20));
+        c.add(10, 20);
         Message m = () -> System.out.println("Here is the message");
         m.show();
 

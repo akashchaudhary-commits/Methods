@@ -1,5 +1,5 @@
 package Abstraction;
-interface printable{
+interface print{
     void display();
 }
 interface Shape{
@@ -12,9 +12,9 @@ interface Shape{
 //    double breadth;
 //    double radius;
     void area();
-    void perimeter();
+    abstract void perimeter();
 }
-class rectangle implements Shape,printable{
+class rectangle implements Shape,print{
     double length;
     double breadth;
     rectangle(double length, double breadth)
@@ -33,11 +33,12 @@ class rectangle implements Shape,printable{
     }
     public void display()
     {
-        System.out.println("Display rectangle");
+        System.out.println("Shape is rectangle");
     }
 
+
 }
-class circle implements Shape, printable{
+class circle implements Shape, print{
     double radius;
     circle(double radius)
     {
@@ -53,8 +54,9 @@ class circle implements Shape, printable{
     }
     public void display()
     {
-        System.out.println("Display circle");
+        System.out.println("Shape is circle");
     }
+
 }
 public class Practice2{
     public static void main(String[] args)
